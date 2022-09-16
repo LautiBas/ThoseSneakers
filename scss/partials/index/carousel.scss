@@ -1,0 +1,18 @@
+.carousel{
+    background-color: $secondary-color;
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+        h3{
+            text-align: center;
+            color: $tertiary-color;
+            font-weight: 700;
+            padding-bottom: 50px;
+            text-shadow: 3px 3px 3px $primary-color;
+        }
+        .carousel-item{
+            padding-bottom: 50px;
+            text-shadow: 1px 1px 1px $primary-color;
+        }
+}

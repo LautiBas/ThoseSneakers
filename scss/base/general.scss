@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Prompt", sans-serif;}
+
+#body {
+    background-color: $primary-color;
+}
+
+.navbar{
+    grid-area: nav;
+}
+header{
+    grid-area: header;
+}
+.beneficios{
+    grid-area: beneficios;
+}
+.carrusel{
+    grid-area: carrusel;
+}
+.recomendacion{
+    grid-area: recomendacion;
+}
+.marcas{
+    grid-area: marcas;
+}
+footer{
+    grid-area: footer;
+}
+.productos{
+    grid-area: productos;
+}
+.tituloCatalogo{
+    grid-area: tituloCatalogo;
+}
+.tituloOfertas{
+    grid-area: tituloOfertas;
+}
+.form{
+    grid-area: form;
+}

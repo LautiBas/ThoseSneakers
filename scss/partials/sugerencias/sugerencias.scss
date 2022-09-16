@@ -1,0 +1,35 @@
+.contenedor-sugerencias{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "form form form"
+    "footer footer footer";
+    row-gap: 50px;
+    .form{
+        display: flex;
+        justify-content: center !important;
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            padding: 4rem;
+            align-items: center;
+            background-color: $secondary-color;
+            margin-top: 70px;
+            border-radius: 8px;
+            box-shadow: 5px 5px 4px $tertiary-color;
+            h3{
+                text-decoration: underline $tertiary-color;
+                margin-bottom: 20px;
+                margin-top: -30px;
+            }
+            textarea{
+                height: 226px;
+                width: 565px;
+            }
+            .enviar{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        }
+}

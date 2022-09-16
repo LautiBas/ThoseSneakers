@@ -1,0 +1,35 @@
+.contenedor-registrate{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "form form form"
+    "footer footer footer";
+    row-gap: 50px;
+    .form{
+        display: flex;
+        justify-content: center !important;
+            fieldset{
+                display: flex;
+                flex-direction: column;
+                padding: 4rem;
+                align-items: center;
+                background-color: $secondary-color;
+                margin-top: 70px;
+                border-radius: 8px;
+                box-shadow: 5px 5px 4px $tertiary-color;
+                h3{
+                    margin-bottom: 20px;
+                    margin-top: -40px;
+                    text-decoration: underline $tertiary-color;
+                }
+                .datos{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                }
+            }
+}
+
+
+

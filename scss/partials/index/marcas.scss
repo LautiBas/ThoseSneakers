@@ -1,0 +1,15 @@
+.marcas {
+    margin-bottom: 50px;
+    background-color: #ffffff;
+        h3{
+            text-align: center;
+            color: $tertiary-color;
+            font-weight: 700;
+            padding-bottom: 30px;
+            text-shadow: 3px 3px 3px $primary-color;
+        }
+        .marcas_imagenes{
+            display: flex;
+            justify-content: space-around;
+        }
+}

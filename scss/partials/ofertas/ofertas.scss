@@ -1,0 +1,42 @@
+.contenedor-ofertas{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "tituloOfertas tituloOfertas tituloOfertas"
+    "productos productos productos"
+    "productos productos productos"
+    "footer footer footer";
+    row-gap: 50px;
+        h2{
+            color: $secondary-color;
+            text-align: center;
+            margin-top: 100px;
+            text-decoration: underline $tertiary-color;
+        }
+        .productos {
+            display: flex;
+            margin-top: 100px;
+            background: $secondary-color;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .productos_zapas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid $tertiary-color;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 20%;
+            border-radius: 10px;
+            transition: all 1s;
+            object-fit: contain;
+            box-shadow: 4px 4px 1px 0 rgba(0,0,0,0.2);
+            &:hover{
+                background-color: $tertiary-color;
+            }
+                h5, b{
+                    color: $primary-color;
+                }
+        }
+}

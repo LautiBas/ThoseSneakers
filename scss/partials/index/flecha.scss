@@ -1,0 +1,22 @@
+.flecha {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+        img{
+            animation-name: agrandar;
+            animation-duration: 2s;
+            @keyframes agrandar{
+                0% {
+                height: 0px;
+                }
+                100% {
+                height: 40px;
+                }
+            }
+        }
+}
+.flecha_responsive{
+    display: none;
+}

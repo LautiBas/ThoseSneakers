@@ -1,0 +1,110 @@
+@media (max-width:760px)  {
+    .parallax{
+        background-image: url(../imagenes/navimg.png);
+        height: 280px;
+        background-attachment: inherit;
+            h1{
+                font-size: 48px;
+                margin-top: 70px
+            }
+            h4{
+                color: $tertiary-color;
+                font-size: 12px;
+                margin-top: 40px
+            }
+    }
+    #envio, #cambio{
+        margin-top: 50px ;
+    }
+    .recomendacion{
+        .video{
+            display: none;
+        }
+        .responsive-video{
+            text-align: center;
+            display: block;
+        }
+    }
+    footer{
+        .logo, .derechos{
+            display: none;
+        }
+    }
+    .flecha{
+        display: none;
+    }
+    .flecha_responsive{
+        position: fixed;
+        bottom: 0%;
+        right: 0%;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+    .contenedor-catalogo{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "tituloCatalogo tituloCatalogo tituloCatalogo"
+        "productos productos productos"
+        "productos productos productos"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 50px;
+            h2{
+                margin-top: 0px;
+            }
+            .productos{
+                margin-top: 0px;
+            }
+            .productos_zapas{
+                width: 40%;
+            }
+    }
+    .contenedor-ofertas{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "tituloOfertas tituloOfertas tituloOfertas"
+        "productos productos productos"
+        "productos productos productos"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 50px;
+            h2{
+                margin-top: 0px;
+            }
+    }
+    .contenedor-registrate{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "form form form"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 50px;
+        .form{
+            width: 90%;
+            margin-left: 15px;
+        }
+    }
+    .contenedor-sugerencias{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "form form form"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 50px;
+            .form{
+                fieldset{
+                    textarea{
+                        height: 300px;
+                        width: 200px;
+                    }
+                }
+            }
+    }
+
+
+}
