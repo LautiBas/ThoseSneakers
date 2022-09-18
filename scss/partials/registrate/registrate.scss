@@ -8,19 +8,17 @@
     .form{
         display: flex;
         justify-content: center !important;
-            fieldset{
+            .form_fieldset{
                 display: flex;
                 flex-direction: column;
                 padding: 4rem;
                 align-items: center;
-                background-color: $secondary-color;
+                background-color: map-get($colors, secondary);
                 margin-top: 70px;
                 border-radius: 8px;
-                box-shadow: 5px 5px 4px $tertiary-color;
-                h3{
-                    margin-bottom: 20px;
-                    margin-top: -40px;
-                    text-decoration: underline $tertiary-color;
+                box-shadow: 5px 5px 4px map-get($colors, tertiary);
+                h1{
+                    @include title-style2(20px, -40px, underline #f76700)
                 }
                 .datos{
                     display: flex;

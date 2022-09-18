@@ -4,7 +4,7 @@
     font-family: "Prompt", sans-serif;}
 
 #body {
-    background-color: $primary-color;
+    background-color: map-get($colors, primary);
 }
 
 .navbar{
@@ -39,4 +39,15 @@ footer{
 }
 .form{
     grid-area: form;
+}
+
+@mixin title-style($color, $decoration) {
+    color: $color;
+    text-decoration: $decoration;
+}
+
+@mixin title-style2($mb, $mt, $decoration){
+    margin-bottom: $mb;
+    margin-top: $mt;
+    text-decoration: $decoration;
 }

@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keyewords" content="zapatillas, calzado, sneakers">
+    <meta name="description" content="Registrate para obtener descuentos exclusivos, estar al tanto de nuestro stock y 
+    realizar el seguimiento del envío de tus sneakers.  ">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="icon" href="../imagenes/ts.ico" />
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
@@ -11,14 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/3fbce43d53.js" crossorigin="anonymous"></script>
-    <title>ThoseSneakers</title>
+    <title>ThoseSneakers - Registrate</title>
   </head>
   <body id="body">
     <div class="contenedor-registrate">
-    <header>
+    <header><!--Nav-->
       <nav class="navbar navbar-expand-lg navbar-dark col-12">
         <div class="container-fluid">
-          <img class="navbar-brand" src="../imagenes/ts.ico" />
+          <a href="../index.html"><img class="navbar-brand" src="../imagenes/ts.ico" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -28,7 +31,7 @@
                 <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="catalogo.html">Catalogo</a>
+                <a class="nav-link" href="catalogo.html">Catálogo</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="ofertas.html">OFERTAS!</a>
@@ -41,9 +44,9 @@
         </div>
       </nav>
     </header>
-    <form action="" method="get" enctype="multipart/form-data" class="form">
+    <form action="" method="get" enctype="multipart/form-data" class="form"><!--Form con solicitud de datos-->
       <fieldset class="form_fieldset">
-        <h3 class="tituloRegistrate">Registrate</h3>
+        <h1 class="tituloRegistrate">Registrate</h1>
         <div class="datos">
           <label for="nombre">Nombre</label>
           <input type="text" id="nombre" name="nombre" required />
@@ -75,12 +78,7 @@
         <br />
         <div class="datos">
           <label for="condiciones"></label>
-          <input
-            type="checkbox"
-            id="condiciones"
-            name="condiciones"
-            required
-          />Aceptar términos y condiciones
+          <input type="checkbox" id="condiciones" name="condiciones" required/>Aceptar términos y condiciones
         </div>
         <br />
         <div class="datos">
@@ -88,7 +86,7 @@
         </div>
       </fieldset>
     </form>
-    <footer class="footer">
+    <footer class="footer"><!--Footer-->
       <div class="mejorar">
         <h4 class="footer_mejorar_h4">Ayudanos a mejorar</h4>
         <div class="footer_mejorar_sugerencias">
@@ -107,6 +105,10 @@
     <img class="logo" src="../imagenes/ts.ico" />
     <h6 class="derechos">Derechos Reservados</h6>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+      crossorigin="anonymous">
+    </script>
   </body>
 </html>

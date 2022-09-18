@@ -112,9 +112,7 @@ nav {
     font-weight: 700;
     padding-bottom: 30px;
     text-shadow: 3px 3px 3px #000000; }
-  .recomendacion h6 {
-    text-align: center; }
-  .recomendacion .video {
+  .recomendacion h6, .recomendacion .video {
     text-align: center; }
   .recomendacion .responsive-video {
     display: none; }
@@ -189,11 +187,11 @@ footer {
   display: grid;
   grid-template-areas: "header header header" "tituloCatalogo tituloCatalogo tituloCatalogo" "productos productos productos" "productos productos productos" "footer footer footer";
   row-gap: 50px; }
-  .contenedor-catalogo h2 {
+  .contenedor-catalogo .tituloCatalogo {
     color: #ffffff;
+    text-decoration: underline #f76700;
     text-align: center;
-    margin-top: 100px;
-    text-decoration: underline #f76700; }
+    margin-top: 100px; }
   .contenedor-catalogo .productos {
     display: flex;
     margin-top: 100px;
@@ -221,11 +219,11 @@ footer {
   display: grid;
   grid-template-areas: "header header header" "tituloOfertas tituloOfertas tituloOfertas" "productos productos productos" "productos productos productos" "footer footer footer";
   row-gap: 50px; }
-  .contenedor-ofertas h2 {
+  .contenedor-ofertas h1 {
     color: #ffffff;
+    text-decoration: underline #f76700;
     text-align: center;
-    margin-top: 100px;
-    text-decoration: underline #f76700; }
+    margin-top: 100px; }
   .contenedor-ofertas .productos {
     display: flex;
     margin-top: 100px;
@@ -249,14 +247,14 @@ footer {
     .contenedor-ofertas .productos_zapas h5, .contenedor-ofertas .productos_zapas b {
       color: #000000; }
 
-.contenedor-registrate {
+.contenedor-registrate, .contenedor-sugerencias {
   display: grid;
   grid-template-areas: "header header header" "form form form" "footer footer footer";
   row-gap: 50px; }
-  .contenedor-registrate .form {
+  .contenedor-registrate .form, .contenedor-sugerencias .form {
     display: flex;
     justify-content: center !important; }
-    .contenedor-registrate .form fieldset {
+    .contenedor-registrate .form .form_fieldset, .contenedor-sugerencias .form .form_fieldset {
       display: flex;
       flex-direction: column;
       padding: 4rem;
@@ -265,41 +263,37 @@ footer {
       margin-top: 70px;
       border-radius: 8px;
       box-shadow: 5px 5px 4px #f76700; }
-      .contenedor-registrate .form fieldset h3 {
+      .contenedor-registrate .form .form_fieldset h1, .contenedor-sugerencias .form .form_fieldset h1 {
         margin-bottom: 20px;
         margin-top: -40px;
         text-decoration: underline #f76700; }
-      .contenedor-registrate .form fieldset .datos {
+      .contenedor-registrate .form .form_fieldset .datos, .contenedor-sugerencias .form .form_fieldset .datos {
         display: flex;
         flex-direction: column;
         align-items: flex-start; }
 
-.contenedor-sugerencias {
-  display: grid;
-  grid-template-areas: "header header header" "form form form" "footer footer footer";
-  row-gap: 50px; }
-  .contenedor-sugerencias .form {
+.contenedor-sugerencias .form {
+  display: flex;
+  justify-content: center !important; }
+  .contenedor-sugerencias .form fieldset {
     display: flex;
-    justify-content: center !important; }
-    .contenedor-sugerencias .form fieldset {
+    flex-direction: column;
+    padding: 4rem;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 70px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 4px #f76700; }
+    .contenedor-sugerencias .form fieldset h1 {
+      margin-bottom: 20px;
+      margin-top: -40px;
+      text-decoration: underline #f76700; }
+    .contenedor-sugerencias .form fieldset textarea {
+      height: 226px;
+      width: 565px; }
+    .contenedor-sugerencias .form fieldset .enviar {
       display: flex;
-      flex-direction: column;
-      padding: 4rem;
-      align-items: center;
-      background-color: #ffffff;
-      margin-top: 70px;
-      border-radius: 8px;
-      box-shadow: 5px 5px 4px #f76700; }
-      .contenedor-sugerencias .form fieldset h3 {
-        text-decoration: underline #f76700;
-        margin-bottom: 20px;
-        margin-top: -30px; }
-      .contenedor-sugerencias .form fieldset textarea {
-        height: 226px;
-        width: 565px; }
-      .contenedor-sugerencias .form fieldset .enviar {
-        display: flex;
-        justify-content: center; }
+      justify-content: center; }
 
 @media (max-width: 760px) {
   .parallax {
@@ -336,7 +330,7 @@ footer {
     grid-template-areas: "header header header" "tituloCatalogo tituloCatalogo tituloCatalogo" "productos productos productos" "productos productos productos" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 50px; }
-    .contenedor-catalogo h2 {
+    .contenedor-catalogo .tituloCatalogo {
       margin-top: 0px; }
     .contenedor-catalogo .productos {
       margin-top: 0px; }
@@ -347,14 +341,18 @@ footer {
     grid-template-areas: "header header header" "tituloOfertas tituloOfertas tituloOfertas" "productos productos productos" "productos productos productos" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 50px; }
-    .contenedor-ofertas h2 {
+    .contenedor-ofertas .tituloOfertas {
       margin-top: 0px; }
-  .contenedor-registrate {
+    .contenedor-ofertas .productos {
+      margin-top: 0px; }
+    .contenedor-ofertas .productos_zapas {
+      width: 40%; }
+  .contenedor-registrate, .contenedor-sugerencias {
     display: grid;
     grid-template-areas: "header header header" "form form form" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 50px; }
-    .contenedor-registrate .form {
+    .contenedor-registrate .form, .contenedor-sugerencias .form {
       width: 90%;
       margin-left: 15px; }
   .contenedor-sugerencias {

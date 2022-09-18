@@ -1,10 +1,5 @@
 .contenedor-sugerencias{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "form form form"
-    "footer footer footer";
-    row-gap: 50px;
+    @extend .contenedor-registrate;
     .form{
         display: flex;
         justify-content: center !important;
@@ -13,14 +8,12 @@
             flex-direction: column;
             padding: 4rem;
             align-items: center;
-            background-color: $secondary-color;
+            background-color: map-get($colors, secondary);
             margin-top: 70px;
             border-radius: 8px;
-            box-shadow: 5px 5px 4px $tertiary-color;
-            h3{
-                text-decoration: underline $tertiary-color;
-                margin-bottom: 20px;
-                margin-top: -30px;
+            box-shadow: 5px 5px 4px map-get($colors, tertiary);
+            h1{
+                @include title-style2(20px, -40px, underline #f76700)
             }
             textarea{
                 height: 226px;

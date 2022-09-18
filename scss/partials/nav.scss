@@ -1,11 +1,11 @@
 nav{
-    background-color: $primary-color;
+    background-color: map-get($colors, primary);
     img{
         width: 40px;
     }
     .nav-link{
             &:hover{
-                    color: $tertiary-color;
+                    color: map-get($colors, tertiary);
                 }
             }
     

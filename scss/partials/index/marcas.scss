@@ -1,12 +1,12 @@
 .marcas {
     margin-bottom: 50px;
-    background-color: #ffffff;
+    background-color: map-get($colors, secondary);
         h3{
             text-align: center;
-            color: $tertiary-color;
+            color: map-get($colors, tertiary);
             font-weight: 700;
             padding-bottom: 30px;
-            text-shadow: 3px 3px 3px $primary-color;
+            text-shadow: 3px 3px 3px map-get($colors, primary);
         }
         .marcas_imagenes{
             display: flex;

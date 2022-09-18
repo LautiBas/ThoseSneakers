@@ -1,9 +1,9 @@
 footer{
     margin-top: 50px;
-    background-color: $tertiary-color;
+    background-color: map-get($colors, tertiary);
         a{
             text-decoration: none;
-            color: $primary-color;
+            color: map-get($colors, primary);
             font-weight: 700;
         }
         .mejorar{
@@ -12,7 +12,7 @@ footer{
             position: absolute;
             h4{
                 font-size: 20px;
-                color: $secondary-color;
+                color: map-get($colors, secondary);
                 font-weight: 500;
                 font-size: larger;
             }
@@ -22,7 +22,7 @@ footer{
             margin-left: 250px;
             h4{
                 font-size: 20px;
-                color: $secondary-color;
+                color: map-get($colors, secondary);
                 font-weight: 500;
                 font-size: larger;
             }

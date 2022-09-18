@@ -1,19 +1,19 @@
 .recomendacion {
     margin-top: 50px;
     margin-bottom: 100px;
-    background-color: $secondary-color;
+    background-color: map-get($colors, secondary);
         h3{
             text-align: center;
-            color: $tertiary-color;
+            color: map-get($colors, tertiary);
             font-weight: 700;
             padding-bottom: 30px;
-            text-shadow: 3px 3px 3px $primary-color;
+            text-shadow: 3px 3px 3px map-get($colors, primary);
         }
         h6{
             text-align: center;
         }
         .video{
-            text-align: center;
+            @extend h6
         }
         .responsive-video{
             display: none;
