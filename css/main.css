@@ -161,7 +161,7 @@ footer {
   footer .derechos {
     display: inline-block;
     position: relative;
-    margin-left: 993px;
+    margin-left: 965px;
     font-weight: 700; }
 
 .flecha {
@@ -314,6 +314,12 @@ footer {
   .recomendacion .responsive-video {
     text-align: center;
     display: block; }
+  .marcas .marcas_imagenes .marcas_adidas {
+    height: 36px; }
+  .marcas .marcas_imagenes .marcas_nb, .marcas .marcas_imagenes .marcas_nike {
+    height: 48px; }
+  .marcas .marcas_imagenes .marcas_jordan, .marcas .marcas_imagenes .marcas_converse {
+    height: 38px; }
   footer .logo, footer .derechos {
     display: none; }
   .flecha {

@@ -25,6 +25,19 @@
             display: block;
         }
     }
+    .marcas{
+        .marcas_imagenes{
+            .marcas_adidas{
+                height: 36px;
+            }
+            .marcas_nb, .marcas_nike{
+                height: 48px;
+            }
+            .marcas_jordan, .marcas_converse{
+                height: 38px;
+            }
+        }
+    }
     footer{
         .logo, .derechos{
             display: none;
