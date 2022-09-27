@@ -64,8 +64,13 @@
         "footer footer footer";
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 50px;
+            .navbar{
+                position: fixed;
+                z-index: 2;
+            }
             .tituloCatalogo{
-                margin-top: 0px;
+                margin-top: 50px;
+                z-index: 1;
             }
             .productos{
                 margin-top: 0px;
@@ -84,8 +89,13 @@
         "footer footer footer";
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 50px;
+            .navbar{
+                position: fixed;
+                z-index: 2;
+            }
             .tituloOfertas{ 
-                margin-top: 0px;
+                margin-top: 50px;
+                z-index: 1;
             }
             .productos{
                 margin-top: 0px;

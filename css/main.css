@@ -336,8 +336,12 @@ footer {
     grid-template-areas: "header header header" "tituloCatalogo tituloCatalogo tituloCatalogo" "productos productos productos" "productos productos productos" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 50px; }
+    .contenedor-catalogo .navbar {
+      position: fixed;
+      z-index: 2; }
     .contenedor-catalogo .tituloCatalogo {
-      margin-top: 0px; }
+      margin-top: 50px;
+      z-index: 1; }
     .contenedor-catalogo .productos {
       margin-top: 0px; }
     .contenedor-catalogo .productos_zapas {
@@ -347,8 +351,12 @@ footer {
     grid-template-areas: "header header header" "tituloOfertas tituloOfertas tituloOfertas" "productos productos productos" "productos productos productos" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 50px; }
+    .contenedor-ofertas .navbar {
+      position: fixed;
+      z-index: 2; }
     .contenedor-ofertas .tituloOfertas {
-      margin-top: 0px; }
+      margin-top: 50px;
+      z-index: 1; }
     .contenedor-ofertas .productos {
       margin-top: 0px; }
     .contenedor-ofertas .productos_zapas {
