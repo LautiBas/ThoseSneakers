@@ -27,6 +27,9 @@ header {
 footer {
   grid-area: footer; }
 
+.productosFiltro {
+  grid-area: productosFiltro; }
+
 .productos {
   grid-area: productos; }
 
@@ -185,13 +188,18 @@ footer {
 
 .contenedor-catalogo {
   display: grid;
-  grid-template-areas: "header header header" "tituloCatalogo tituloCatalogo tituloCatalogo" "productos productos productos" "productos productos productos" "footer footer footer";
+  grid-template-areas: "header header header" "tituloCatalogo tituloCatalogo tituloCatalogo" "productosFiltro productosFiltro productosFiltro" "productos productos productos" "footer footer footer";
   row-gap: 50px; }
   .contenedor-catalogo .tituloCatalogo {
     color: #ffffff;
     text-decoration: underline #f76700;
     text-align: center;
     margin-top: 100px; }
+  .contenedor-catalogo .productosFiltro {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: -50px; }
   .contenedor-catalogo .productos {
     display: flex;
     margin-top: 100px;
