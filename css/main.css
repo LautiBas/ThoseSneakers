@@ -48,6 +48,8 @@ nav {
     width: 40px; }
   nav .nav-link:hover {
     color: #f76700; }
+  nav #carrito {
+    margin-left: 600px; }
 
 .parallax {
   background-image: url("../imagenes/navimg.png");
@@ -206,7 +208,7 @@ footer {
     background: #ffffff;
     justify-content: space-around;
     flex-wrap: wrap; }
-  .contenedor-catalogo .productos_zapas {
+  .contenedor-catalogo .card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,27 +220,37 @@ footer {
     transition: all 1s;
     object-fit: contain;
     box-shadow: 4px 4px 1px 0 rgba(0, 0, 0, 0.2); }
-    .contenedor-catalogo .productos_zapas:hover {
+    .contenedor-catalogo .card:hover {
       background-color: #f76700; }
-    .contenedor-catalogo .productos_zapas h5, .contenedor-catalogo .productos_zapas b {
-      color: #000000; }
+    .contenedor-catalogo .card h5, .contenedor-catalogo .card b {
+      color: #000000;
+      text-align: center; }
+    .contenedor-catalogo .card .btn {
+      background-color: #000000;
+      border: 1px solid #f76700; }
 
 .contenedor-ofertas {
   display: grid;
-  grid-template-areas: "header header header" "tituloOfertas tituloOfertas tituloOfertas" "productos productos productos" "productos productos productos" "footer footer footer";
+  grid-template-areas: "header header header" "tituloOfertas tituloOfertas tituloOfertas" "productosFiltro productosFiltro productosFIltro" "productos productos productos" "footer footer footer";
   row-gap: 50px; }
   .contenedor-ofertas h1 {
     color: #ffffff;
     text-decoration: underline #f76700;
     text-align: center;
     margin-top: 100px; }
+  .contenedor-ofertas .productosFiltro {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    margin-left: 520px; }
   .contenedor-ofertas .productos {
     display: flex;
     margin-top: 100px;
     background: #ffffff;
     justify-content: space-around;
     flex-wrap: wrap; }
-  .contenedor-ofertas .productos_zapas {
+  .contenedor-ofertas .card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,10 +262,13 @@ footer {
     transition: all 1s;
     object-fit: contain;
     box-shadow: 4px 4px 1px 0 rgba(0, 0, 0, 0.2); }
-    .contenedor-ofertas .productos_zapas:hover {
+    .contenedor-ofertas .card:hover {
       background-color: #f76700; }
-    .contenedor-ofertas .productos_zapas h5, .contenedor-ofertas .productos_zapas b {
+    .contenedor-ofertas .card h5, .contenedor-ofertas .card b {
       color: #000000; }
+    .contenedor-ofertas .card .btn {
+      background-color: #000000;
+      border: 1px solid #f76700; }
 
 .contenedor-registrate, .contenedor-sugerencias {
   display: grid;
@@ -483,3 +498,58 @@ footer {
       height: 40px; } }
   .flecha_responsive {
     display: none; } }
+
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+  animation: sk-rotate 2.0s infinite linear; }
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  border-radius: 100%;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out; }
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s; }
+
+@-webkit-keyframes sk-rotate {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes sk-rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1); } }
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0); }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
+
+#activarFuncion {
+  display: none; }
+
+.img-carrito {
+  width: 300px; }

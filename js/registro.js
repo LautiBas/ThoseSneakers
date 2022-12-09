@@ -9,4 +9,5 @@ btnEnviar.addEventListener(`click`, () => {
   localStorage.setItem(`apellido`, apellido.value);
   localStorage.setItem(`email`, email.value);
   localStorage.setItem(`contraseña`, contraseña.value);
+  alert(`Bienvenido ${nombre.value}`)
 });

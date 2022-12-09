@@ -3,7 +3,7 @@
     grid-template-areas: 
     "header header header"
     "tituloOfertas tituloOfertas tituloOfertas"
-    "productos productos productos"
+    "productosFiltro productosFiltro productosFIltro"
     "productos productos productos"
     "footer footer footer";
     row-gap: 50px;
@@ -12,6 +12,13 @@
             text-align: center;
             margin-top: 100px;
         }
+        .productosFiltro{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+            margin-bottom: -50px;
+            margin-left: 520px;
+            }
         .productos {
             display: flex;
             margin-top: 100px;
@@ -19,7 +26,7 @@
             justify-content: space-around;
             flex-wrap: wrap;
         }
-        .productos_zapas {
+        .card {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -36,6 +43,10 @@
             }
                 h5, b{
                     color: map-get($colors, primary);
+                }
+                .btn{
+                    background-color: map-get($colors, primary);
+                    border: 1px solid map-get($colors, tertiary);
                 }
         }
 }
